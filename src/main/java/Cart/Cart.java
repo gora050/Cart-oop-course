@@ -1,12 +1,13 @@
 package Cart;
 
+import Cart.cartObserver.Observable;
 import Cart.deliveryStrategy.DeliveryStrategy;
 import Cart.paymentStrategy.PaymentStrategy;
 import Game.ComputerGame;
 
 import java.util.List;
 
-public class Cart {
+public class Cart extends Observable{
 
     private List<ComputerGame> games;
     private DeliveryStrategy deliveryStrategy;
